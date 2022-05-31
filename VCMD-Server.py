@@ -4,9 +4,8 @@ s = socket.socket()
 print ("Socket successfully created")
 
 port = 12690
-ip = socket.gethostbyname(socket.gethostname())
 
-s.bind((ip, port))
+s.bind(('', port))
 print ("socket binded to %s" %(port))
 
 s.listen(5)
